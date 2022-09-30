@@ -4,7 +4,7 @@
 name: (classic) Build and Deploy Logic App. 
 
 env:
-  LA_NAME: 'la-name-324234'
+  LA_NAME: 'HelloWorldStnd01'
 
 on:
   workflow_dispatch:
@@ -18,7 +18,7 @@ on:
   push:
     paths:
       - "logic/**"
-      - ".github/workflows/logicapp_deploy.yml"
+      - ".github/workflows/Workflow_Deploy.yml"
 
 jobs:
   logic_app_build: 
@@ -28,7 +28,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Package logic
-      run: (cd logic; mkdir -p ../output; zip -r ../output/logic.zip .)
+      run: (cd Demo_LogicAppStnd; mkdir -p ../output; zip -r ../output/logic.zip .)
     - name: Upload app zip package
       uses: actions/upload-artifact@v2
       with:
