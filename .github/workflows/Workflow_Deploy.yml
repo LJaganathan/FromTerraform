@@ -80,6 +80,5 @@ jobs:
       uses: azure/powershell@v1
       with:
         inlineScript: |
-          az functionapp deploy --resource-group ${{ secrets.RG_LA }} --name ${{ env.LA_NAME }} --src-path Demo_LogicAppStnd/azure.parameters.json --type static --target-path parameters.json
-          az functionapp config appsettings list --name --name ${{ env.LA_NAME }} --resource-group ${{ secrets.RG_LA }}
+         az functionapp deploy --resource-group ${{ secrets.RG_LA }} --name ${{ env.LA_NAME }} --src-path Demo_LogicAppStnd/azure.parameters.json --type static --target-path parameters.json          
         azPSVersion: latest
