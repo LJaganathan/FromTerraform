@@ -8,25 +8,7 @@
         "id": "/subscriptions/db66ab0b-0784-4e18-b5e8-1f0643425552/resourceGroups/Lakshmayya7/providers/Microsoft.Web/connections/azureblob"
       },
       "connectionRuntimeUrl": "https://e59469ec18c57039.08.common.logic-westeurope.azure-apihub.net/apim/azureblob/f82b54fde99f4b0a9ce6fc463d3159de/",
-      "authentication": {
-        "type": "Raw",
-        "scheme": "Key",
-        "parameter": "@appsetting('azureblob-connectionKey')"
-      }
-    },
-    "azureblob_1": {
-      "api": {
-        "id": "/subscriptions/db66ab0b-0784-4e18-b5e8-1f0643425552/providers/Microsoft.Web/locations/westeurope/managedApis/azureblob"
-      },
-      "connection": {
-        "id": "/subscriptions/db66ab0b-0784-4e18-b5e8-1f0643425552/resourceGroups/Lakshmayya7/providers/Microsoft.Web/connections/azureblob-2"
-      },
-      "connectionRuntimeUrl": "https://e59469ec18c57039.08.common.logic-westeurope.azure-apihub.net/apim/azureblob/a7b68c7730984c06b9799a44ea6073e3/",
-      "authentication": {
-        "type": "Raw",
-        "scheme": "Key",
-        "parameter": "@appsetting('azureblob_1-connectionKey')"
-      }
-    }
+      "authentication": "@parameters('blob_auth')"
+    }    
   }
 }
