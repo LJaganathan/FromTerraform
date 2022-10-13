@@ -7,7 +7,7 @@
                 "inputs": {
                     "host": {
                         "connection": {
-                            "referenceName": "azureblob_1"
+                            "referenceName": "azureblob"
                         }
                     },
                     "method": "get",
