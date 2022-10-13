@@ -11,15 +11,15 @@
                         }
                     },
                     "method": "get",
-                    "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/foldersV2/@{encodeURIComponent(encodeURIComponent('JTJmc3RuZHRlc3Q='))}",
+                    "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/foldersV2/@{encodeURIComponent(encodeURIComponent('JTJmZGVzaWducHJ2dGNvbnRhaW5lcg=='))}",
                     "queries": {
                         "nextPageMarker": "",
                         "useFlatListing": false
                     }
                 },
                 "runAfter": {},
-                "metadata": {
-                    "JTJmc3RuZHRlc3Q=": "/designprvtcontainer"
+                "metadata": {                    
+                    "JTJmZGVzaWducHJ2dGNvbnRhaW5lcg==": "/designprvtcontainer"
                 }
             }
         },
