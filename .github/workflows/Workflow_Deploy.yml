@@ -4,7 +4,7 @@
 name: (classic) Build and Deploy Logic App. 
 
 env:
-  LA_NAME: 'HelloWorldStnd01'
+  LA_NAME: 'HelloWorldStnd02'
 
 on:
   workflow_dispatch:
