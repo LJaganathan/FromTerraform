@@ -74,7 +74,15 @@ jobs:
         app-name: ${{secrets.RG_LA}}
         package: './output/logic.zip'
         publish-profile: ${{steps.publishprofile.outputs.profile}}
-
+        
+    - name: Bash Commands
+      shell: bash
+      run: |
+        expr 1 + 1 > output.log;
+        echo $GITHUB_WORKSPACE;
+    - name: run ls command
+      run: ls
+      
     - name: Swap parameter files 
       id: params
       uses: azure/powershell@v1
