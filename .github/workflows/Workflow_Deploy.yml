@@ -4,7 +4,7 @@
 name: (classic) Build and Deploy Logic App. 
 
 env:
-  LA_NAME: 'HelloWorldStnd02'
+  LA_NAME: 'HelloWorldStnd01'
 
 on:
   workflow_dispatch:
@@ -13,7 +13,7 @@ on:
   # Triggers when an environment file has been changed  
   push:
     paths:
-      - "Demo_LogicAppStnd/**"
+      - "ToCreateWorkflow/**"
       - ".github/workflows/Workflow_Deploy.yml"
 
 jobs:
@@ -84,4 +84,4 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-         az functionapp deploy --resource-group ${{ secrets.RG_LA }} --name ${{ env.LA_NAME }} --src-path Demo_LogicAppStnd/azure.parameters.json --type static --target-path /home/site/wwwroot/parameters.json
+         az functionapp deploy --resource-group ${{ secrets.RG_LA }} --name ${{ env.LA_NAME }} --src-path ToCreateWorkflow/azure.parameters.json --type static --target-path /home/site/wwwroot/parameters.json
